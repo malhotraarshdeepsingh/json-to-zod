@@ -1,11 +1,23 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import SchemaConverter from "../components/Converter";
+import '../styles/styles.css';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JSON to Zod Schema Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900">
+    <main class="min-h-screen text-white flex flex-col items-center p-4 sm:p-8">
+      <h1 class="text-3xl sm:text-4xl font-bold mb-6 text-center">
+        JSON to Zod Schema Converter
+      </h1>
+      <div class="w-full">
+        <SchemaConverter client:load />
+      </div>
+    </main>
+  </body>
+</html>
