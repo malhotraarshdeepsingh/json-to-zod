@@ -1,46 +1,152 @@
-# Astro Starter Kit: Basics
+# json-to-zod
 
-```sh
-npm create astro@latest -- --template basics
-```
+A powerful tool for converting JSON objects and schemas into [Zod](https://github.com/colinhacks/zod) validation schemas for TypeScript. Simplify your workflow by effortlessly transforming raw JSON data into type-safe, runtime-validated models.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## 🚀 Features
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Automatic Conversion**: Instantly convert JSON objects or schemas to Zod schema code.
+- **Supports Complex Types**: Handles nested objects, arrays, enums, optionals, and more.
+- **TypeScript Integration**: Output is fully compatible with TypeScript projects.
+- **Customizable Output**: Supports code formatting and schema customization.
+- **CLI & API**: Use as a command-line tool or import as a library in your projects.
+- **Validation Preview**: Test your generated Zod schemas on sample data before exporting.
+- **Extensible**: Easily add your own rules or transformations.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+---
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🛠️ Tech Stack
 
-## 🧞 Commands
+- **Language**: TypeScript, JavaScript
+- **Libraries**: [Zod](https://github.com/colinhacks/zod)
+- **Build Tools**: Node.js, npm/yarn
+- **Testing**: Jest or Vitest (if applicable)
+- **CLI**: Commander (for CLI interface)
+- **Formatting**: Prettier, ESLint
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 📋 Prerequisites
 
-## 👀 Want to learn more?
+Before running or developing with this project, ensure you have:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- [Node.js](https://nodejs.org/) >= 16.x
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- (Optional) [Git](https://git-scm.com/) for cloning the repository
+
+---
+
+## 🏃‍♂️ Run Locally
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/malhotraarshdeepsingh/json-to-zod.git
+   cd json-to-zod
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the tool**
+
+   - **CLI Usage:**
+
+     ```bash
+     node cli.js input.json
+     # or, if installed globally
+     json-to-zod input.json
+     ```
+
+   - **Library Usage:**
+
+     ```typescript
+     import { convertJsonToZod } from 'json-to-zod';
+
+     const zodSchema = convertJsonToZod(myJsonObject);
+     ```
+
+---
+
+## 📸 Snaps
+
+| JSON Input | Zod Output |
+|:----------:|:----------:|
+| ![image1](snaps/json-input.png) | ![image2](snaps/zod-output.png) |
+
+*Sample screenshots of input and generated output.*
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+- Fork the repo and create your branch (`git checkout -b feature/AmazingFeature`)
+- Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+- Push to the branch (`git push origin feature/AmazingFeature`)
+- Open a Pull Request
+
+**Code Style:** Please follow the established code style and run lint/format commands before making a PR.
+
+**Tests:** Add tests for new features or bug fixes.
+
+---
+
+## 🐞 Bug Reports
+
+Found a bug? Please [open an issue](https://github.com/malhotraarshdeepsingh/json-to-zod/issues) with:
+
+- Steps to reproduce
+- Expected behavior
+- Screenshots (if relevant)
+- Environment details
+
+We appreciate your help in making this tool better!
+
+---
+
+## 🙏 Acknowledgements
+
+- [Zod](https://github.com/colinhacks/zod) for robust schema validation.
+- [Commander](https://github.com/tj/commander.js) for CLI interface.
+- [TypeScript](https://www.typescriptlang.org/) for type safety.
+- All contributors and open source maintainers.
+
+---
+
+## 💡 Inspiration Sources
+
+- [Quicktype](https://quicktype.io/) for type generation from JSON.
+- [colinhacks/zod](https://github.com/colinhacks/zod)
+- Community feedback and developer pain points around schema validation.
+
+---
+
+## 📞 Contact & Support
+
+Have questions or need support?
+
+- GitHub Issues: [json-to-zod/issues](https://github.com/malhotraarshdeepsingh/json-to-zod/issues)
+- Email: [malhotraarshdeepsingh@gmail.com](mailto:malhotraarshdeepsingh@gmail.com)
+- Follow me on [GitHub](https://github.com/malhotraarshdeepsingh)
+
+---
+
+## 🌟 Show Your Support
+
+If you find this project helpful:
+
+- ⭐ Star this repository on GitHub
+- 🚀 Share with others
+- 💬 Give feedback or suggest features
+
+Thank you for using **json-to-zod**!
+
+---
