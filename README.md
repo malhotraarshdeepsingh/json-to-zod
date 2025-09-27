@@ -59,26 +59,14 @@ Before running or developing with this project, ensure you have:
    - **CLI Usage:**
 
      ```bash
-     node cli.js input.json
-     # or, if installed globally
-     json-to-zod input.json
-     ```
-
-   - **Library Usage:**
-
-     ```typescript
-     import { convertJsonToZod } from 'json-to-zod';
-
-     const zodSchema = convertJsonToZod(myJsonObject);
+     npm run start
      ```
 
 ---
 
 ## 📸 Snaps
 
-| JSON Input | Zod Output |
-|:----------:|:----------:|
-| ![image1](snaps/json-input.png) | ![image2](snaps/zod-output.png) |
+![image1](./snap.png)
 
 *Sample screenshots of input and generated output.*
 
@@ -118,14 +106,6 @@ We appreciate your help in making this tool better!
 - [Commander](https://github.com/tj/commander.js) for CLI interface.
 - [TypeScript](https://www.typescriptlang.org/) for type safety.
 - All contributors and open source maintainers.
-
----
-
-## 💡 Inspiration Sources
-
-- [Quicktype](https://quicktype.io/) for type generation from JSON.
-- [colinhacks/zod](https://github.com/colinhacks/zod)
-- Community feedback and developer pain points around schema validation.
 
 ---
 
